@@ -3,4 +3,4 @@
 
 Using Alpine JS, Tailwind CSS and only 10 SVG assets the Cistercian Monks Numbering System was modernizied. Simply type in your number from 1 - 9999 in the demo and see corresponding number in Cistercian Monk format.
 
-Demo - [LINK]
+Demo - https://cistercian-monks-numbering-system.pages.dev/
