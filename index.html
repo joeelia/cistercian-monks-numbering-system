@@ -1,0 +1,405 @@
+<script type="module" src="/main.js"></script>
+<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script>
+  document.addEventListener("alpine:init", () => {
+    Alpine.data("cistercian", () => ({
+      number: 9864,
+      svgValue: ` <svg
+                  class="w-56 h-56"
+                  viewBox="0 0 146 146"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <rect width="146" height="146" fill="url(#pattern0)" />
+                  <rect width="146" height="146" fill="url(#pattern1)" />
+                  <rect width="146" height="146" transform="matrix(1 0 0 -1 0 146)" fill="url(#pattern2)" />
+                  <rect width="146" height="146" transform="matrix(1 0 0 -1 0 146)" fill="url(#pattern3)" />
+                  <rect width="146" height="146" fill="url(#pattern4)" />
+                  <rect
+                    x="146"
+                    y="146"
+                    width="146"
+                    height="146"
+                    transform="rotate(-180 146 146)"
+                    fill="url(#pattern5)"
+                  />
+                  <rect width="146" height="146" transform="matrix(-1 0 0 1 146 0)" fill="url(#pattern6)" />
+                  <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_4_33" transform="scale(0.00268817)" />
+                    </pattern>
+                    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image1_4_33" transform="scale(0.00268817)" />
+                    </pattern>
+                    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image2_4_33" transform="scale(0.00268817)" />
+                    </pattern>
+                    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image3_4_33" transform="scale(0.00268817)" />
+                    </pattern>
+                    <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image3_4_33" transform="scale(0.00268817)" />
+                    </pattern>
+                    <pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image4_4_33" transform="scale(0.00268817)" />
+                    </pattern>
+                    <pattern id="pattern6" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image5_4_33" transform="scale(0.00268817)" />
+                    </pattern>
+                    <image
+                      id="image0_4_33"
+                      width="372"
+                      height="372"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXQAAAF0CAYAAAAzY8JTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATNSURBVHgB7djBTQJRGEbRpxVQgqXRibZgRWgF2MGUgs+IwbgAWWiGm3OSb/dv52byxgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+x2bucW43dzhuP7cdANyMh7llnEL+c8vxBoCVOxfz71HfDABWazsux/xrTwOA1fp4J/9t0HcDQu4GtByuvPcNkHE/AEgQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHSACEEHiBB0gAhBB4gQdIAIQQeIEHRqXq64fRsQIujUvF5x+zwAWK3N3DJ3uLBlALB6D+N81JfjDQA3Yju3H6eQ7+aexudfPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPDn3gEkCki/JfDJNwAAAABJRU5ErkJggg=="
+                    />
+                    <image
+                      id="image1_4_33"
+                      width="372"
+                      height="372"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXQAAAF0CAYAAAAzY8JTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQFSURBVHgB7drbaRxBAETRwhEohErFmWwmVmbCESgEORN7hSX8AiFZhp1anwPF/PT3pRk6AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBPN+d9Ou/uvK9Puz/vFABm9LyH/Aj573t4OgPAgTUvx/znqN8EgENqXhfz590GgMNp3hbzx90FgENp3h7z5wFwEM3fx1zQAQ6ieV/M7wPAxTXvi/njTgHgopr3x/whAFxU829i3gBwMY2YA8xrxBxgXiPmAPMaMQeY14g5wLxGzAHmNWIOMK8Rc4B5jZgDzGvEHGBeI+YA8xoxB5jXiDnAvEbMAeY1Yg4wrxFzgHmNmAPMa8QcYF4j5gDzGjEHmNeIOcC8RswB5jViDjCvEXOAeY2YA8xrxBxgXiPmAPMaMQeY14g5wLxGzAHmNWIOMK8Rc4B5jZgDzGvEHGBeI+YA8xoxB5jXiDnAvEbMAeY1Yg4wrxFzgHmNmAPMa8QcYF4j5gDzGjEHmNeIOcC8RswB5jViDjCvEXOAeY2YA8xrxBxgXiPmAPMaMQeY14g5wLxGzAHmNWIOMK8Rc4B5jZgDzGvEHGBeI+YA8xoxB5jXiDnAvEbMAeY1Yg4wrxFzgHmNmAPMa8QcYF4j5gDzGjEHmNeIOcC8RswB5jViDjCvEXOAeY2YA8xrxBxgXiPmAPMaMQeY14g5wLxGzAHmNWIOMK8Rc4B5jZgDzGvEHGBeI+YA8xoxB5jXiDnAvEbMAeY1Yg4wrxFzgHmNmAPMa8QcYF4j5gDzGjEHmNeIOcC8RswB5jViDjCvEXOAeY2YA8xrxBxgXiPmAFdBzAGuwCliDnAV7iPmAFdBzAGuhJgDXIm7iDn/qQ+B6/L5DWe/nPfx6QvAwdzkdc8W3cwBBjQvR13MAcac8uszxsf/67f5fosHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOLhvgCGNnJCs3tgAAAAASUVORK5CYII="
+                    />
+                    <image
+                      id="image2_4_33"
+                      width="372"
+                      height="372"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXQAAAF0CAYAAAAzY8JTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOVSURBVHgB7djBTQNBFAXBgQgcAqE5E0iBiAwRQAYbihmEEQikBZ+8NFXSu/1zazRjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPDdbu527jB3PO1pbj8A+DNu5pbxEfKvW043AGzcWsw/R303ANis/fg55u+7GwBs1us/+W+DfhisuhoAl3M8816zVlwPABIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHbikhzNunwerBB24pMczbu8HAJu1m1vmjj9sGQBs3s1Yj/pyugHgj9jPPY2PkB/m7sbbKx4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+oRdMrEePMHJCBAAAAABJRU5ErkJggg=="
+                    />
+                    <image
+                      id="image3_4_33"
+                      width="372"
+                      height="372"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXQAAAF0CAYAAAAzY8JTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALPSURBVHgB7dtRTcRQFEXRAwqQMEhAAcFJHYADsICiAQXgYCoBB8Ntyg8f8/ggmaR31kq2giYnr01fAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJzHTfVc7aujNtlHNQW4aLvqkG2Nl053+Hmm/OEq0I8B6Geu7qqvcNJ1oJcpxryjXfUUhgw63TyGru7DkE8udHMMndmsASd0gCYMOt28ha4+w5BBp5v30NVrGPI9im6WC0XLhZRd6GSubsOQEzrdLP8pP2QdAHqYsz5T4IJNWU/rW7kRqd/tq5esb10AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwT9+AvGGcBBDqrAAAAABJRU5ErkJggg=="
+                    />
+                    <image
+                      id="image4_4_33"
+                      width="372"
+                      height="372"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXQAAAF0CAYAAAAzY8JTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQESURBVHgB7dvRTVRRGEbRH2MBlDB0oBUonWAF2IG2YEVABdABlEAHeCbDK9f4omHftZIvvDPJ5szh3hkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg3zhf+7F2s/Zi73L3a1cD7Nph7XHeV7zs7T2+fqb8wdlAjwD0PK19Xnse3vRhoOVqxLzosPZ92CTo1FwPVV+GTa5cqHkZyjRrgxM6QISgU3M7sFOCTs3dwE65j6Lm+ELR8YWUw1CkWRuc0Kk5Pqd8OafnlmFXBJ2ip7WLtW9rDwM74esL8D/97WOmmrXBCR0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSBC0AEiBB0gQtABIgQdIELQASIEHSDi40DT+dr12tfXQZ6gU3RYu3n9CbtxNtDzOGJepVkb3KFTczVizk75a0fN/dqnoUqzNvjlUPMylGnWBlcuABGCTs3tUPUwbBJ0au6Gql/DJvdR1BxfKDr+Y/QwlDytXQybnNCpeV67nFMAaHia02cK7NjVnE7rL/Yud7P2c07fugAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGCHfgNQb2+1lxQ3gQAAAABJRU5ErkJggg=="
+                    />
+                    <image
+                      id="image5_4_33"
+                      width="372"
+                      height="372"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXQAAAF0CAYAAAAzY8JTAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQFSURBVHgB7dvBbRRBAETREhEQQoW2meDMLCJwCBvKspYtgTgYbCM8W35Pqtuc/4xa0wkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwf3y97tt199ddnvdw3SkA3Ixed87PkP++8/MzABzcSzEXdYAbccqfYy7qADfg8Zz8ElEHuHmXN0zUAQ7oElEHmHAfUeeT+hLY8j1v1zy9EBoAPtzjhaLHL+1LfKkD3LxG1AFmNKIOMKMRdYAZjagDzGhEHWBGI+oAMxpRB5jRiDrAjEbUAWY0og4woxF1gBmNqAPMaEQdYEYj6gAzGlEHmNGIOsCMRtQBZjSiDjCjEXWAGY2oA8xoRB1gRiPqADMaUQeY0Yg6wIxG1AFmNKIOMKMRdYAZjagDzGhEHWBGI+oAMxpRB5jRiDrAjEbUAWY0og4woxF1gBmNqAPMaEQdYEYj6gAzGlEHmNGIOsCMRtQBZjSiDjCjEXWAGY2oA8xoRB1gRiPqADMaUQeY0Yg6wIxG1AFmNKIOMKMRdYAZjagDzGhEHWBGI+oAMxpRB5jRiDrAjEbUAWY0og4woxF1gBmNqAPMaEQdYEYj6gAzGlEHmNGIOsCMRtQBZjSiDjCjEXWAGY2oA8xoRB1gRiPqADMaUQeY0Yg6wIxG1AFmNKIOMKMRdYAZjagDzGhEHWBGI+oAMxpRB5jRiDrAjEbUAWY0og4woxF1gBmNqAPMaEQdYEYj6gAzGlEHmNGIOsCMRtQBZjSiDjCjEXWAGY2oA8xoRB1gRiPqADMaUQeY0Yg6wIxG1AFmNKIOMKMRdYAZjagDzGj+TdS/BoAP17w/6ncB4BCa90X9PgAcRvO+qANwIM3bow7AwTSvj/pDADik5nVRPwWAw2r+LurnAHB4zctRP8fFIoCbcsrTOfmvvynexYUiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPq0ffg2HnxaZWFsAAAAASUVORK5CYII="
+                    />
+                  </defs>
+                </svg>`,
+
+      changeSvgValue() {
+        const svgNumber = document.createElement("svg");
+        svgNumber.classList.add("w-56", "h-56");
+        svgNumber.setAttribute("viewBox", "0 0 146 146");
+        svgNumber.setAttribute("fill", "none");
+        svgNumber.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+        svgNumber.setAttribute("xmlns:xlink", "http://www.w3.org/1999/xlink");
+
+        const base = document.createElement("path");
+        base.setAttribute("d", `M35 12V58`);
+        base.setAttribute("stroke", "black");
+        base.setAttribute("stroke-width", "2");
+        base.setAttribute("stroke-linecap", "round");
+        const numberString = this.number.toString();
+
+        svgNumber.appendChild(base);
+        let maxLevel = this.getLength(this.number);
+        for (let i = 0; i < this.getLength(this.number); i++) {
+          const svgNumberSpot = parseInt(numberString[i]);
+          maxLevel--;
+          const level = maxLevel + 1;
+          if (svgNumberSpot != 0) {
+            svgNumber.appendChild(this.getSvg(svgNumberSpot, level));
+          }
+        }
+
+        this.svgValue = svgNumber.innerHTML;
+      },
+      getSvg(svgNumber, level) {
+        switch (svgNumber) {
+          case 1:
+            return this.getSvg1(level);
+            break;
+          case 2:
+            return this.getSvg2(level);
+            break;
+          case 3:
+            return this.getSvg3(level);
+            break;
+          case 4:
+            return this.getSvg4(level);
+            break;
+          case 5:
+            return this.getSvg5(level);
+            break;
+          case 6:
+            return this.getSvg6(level);
+            break;
+          case 7:
+            return this.getSvg7(level);
+            break;
+          case 8:
+            return this.getSvg8(level);
+            break;
+          case 9:
+            return this.getSvg9(level);
+            break;
+          default:
+            return null;
+        }
+      },
+      getSvg1(level) {
+        const top = 12;
+        const bottom = 58;
+        const left = 19;
+        const right = 51;
+        const levelDetails = this.getLevelDetails(level);
+        const side = levelDetails.side == "left" ? left : right;
+        const height = levelDetails.height == "top" ? top : bottom;
+
+        const svg = document.createElement("path");
+        svg.setAttribute("d", `M35 ${height}L${side} ${height}`);
+        svg.setAttribute("stroke", "black");
+        svg.setAttribute("stroke-width", "2");
+        svg.setAttribute("stroke-linecap", "round");
+        return svg;
+      },
+      getSvg2(level) {
+        const top = 28;
+        const bottom = 42;
+        const left = 19;
+        const right = 51;
+        const levelDetails = this.getLevelDetails(level);
+        const side = levelDetails.side == "left" ? left : right;
+        const height = levelDetails.height == "top" ? top : bottom;
+
+        const svg = document.createElement("path");
+        svg.setAttribute("d", `M35 ${height}L${side} ${height}`);
+        svg.setAttribute("stroke", "black");
+        svg.setAttribute("stroke-width", "2");
+        svg.setAttribute("stroke-linecap", "round");
+        return svg;
+      },
+      getSvg3(level) {
+        const top = {
+          pos1: 12,
+          pos2: 27.553,
+        };
+        const bottom = {
+          pos1: 58,
+          pos2: 44.5563,
+        };
+        const left = 19;
+        const right = 51;
+        const levelDetails = this.getLevelDetails(level);
+        const side = levelDetails.side == "left" ? left : right;
+        const height = levelDetails.height == "top" ? top : bottom;
+
+        const svg = document.createElement("path");
+        svg.setAttribute("d", `M35 ${height.pos1}L${side} ${height.pos2}`);
+        svg.setAttribute("stroke", "black");
+        svg.setAttribute("stroke-width", "2");
+        svg.setAttribute("stroke-linecap", "round");
+        return svg;
+      },
+      getSvg4(level) {
+        const top = {
+          pos1: 28,
+          pos2: 12,
+        };
+        const bottom = {
+          pos1: 42,
+          pos2: 58,
+        };
+        const left = 19;
+        const right = 51;
+        const levelDetails = this.getLevelDetails(level);
+        const side = levelDetails.side == "left" ? left : right;
+        const height = levelDetails.height == "top" ? top : bottom;
+
+        const svg = document.createElement("path");
+        svg.setAttribute("d", `M35 ${height.pos1}L${side} ${height.pos2}`);
+        svg.setAttribute("stroke", "black");
+        svg.setAttribute("stroke-width", "2");
+        svg.setAttribute("stroke-linecap", "round");
+        return svg;
+      },
+      getSvg5(level) {
+        //reuse svg1
+        const svg = this.getSvg1(level);
+        const top = {
+          pos1: 27.5562,
+          pos2: 12,
+        };
+        const bottom = {
+          pos1: 44.5563,
+          pos2: 58,
+        };
+        const left = 19;
+        const right = 51;
+
+        const levelDetails = this.getLevelDetails(level);
+        const side = levelDetails.side == "left" ? left : right;
+        const height = levelDetails.height == "top" ? top : bottom;
+
+        const svgNext = document.createElement("path");
+        svgNext.setAttribute("d", `M35 ${height.pos1}L${side} ${height.pos2}`);
+        svgNext.setAttribute("stroke", "black");
+        svgNext.setAttribute("stroke-width", "2");
+        svgNext.setAttribute("stroke-linecap", "round");
+        const g = document.createElement("g");
+        g.appendChild(svg);
+        g.appendChild(svgNext);
+        return g;
+      },
+      getSvg6(level) {
+        const top = {
+          pos1: 12,
+          pos2: 28,
+        };
+        const bottom = {
+          pos1: 58,
+          pos2: 42,
+        };
+        const left = 19;
+        const right = 51;
+
+        const levelDetails = this.getLevelDetails(level);
+        const side = levelDetails.side == "left" ? left : right;
+        const height = levelDetails.height == "top" ? top : bottom;
+
+        const svg = document.createElement("path");
+        svg.setAttribute("d", `M${side} ${height.pos1}L${side} ${height.pos2}`);
+
+        svg.setAttribute("stroke", "black");
+        svg.setAttribute("stroke-width", "2");
+        svg.setAttribute("stroke-linecap", "round");
+
+        return svg;
+      },
+      getSvg7(level) {
+        //reuse svg1
+        const svg1 = this.getSvg1(level);
+        //reuse svg6
+        const svg6 = this.getSvg6(level);
+        const g = document.createElement("g");
+        g.appendChild(svg1);
+        g.appendChild(svg6);
+        return g;
+      },
+      getSvg8(level) {
+        //reuse svg2
+        const svg2 = this.getSvg2(level);
+        //reuse svg6
+        const svg6 = this.getSvg6(level);
+        const g = document.createElement("g");
+        g.appendChild(svg2);
+        g.appendChild(svg6);
+        return g;
+      },
+      getSvg9(level) {
+        //reuse svg1
+        const svg1 = this.getSvg1(level);
+        //reuse svg2
+        const svg2 = this.getSvg2(level);
+        //reuse svg6
+        const svg6 = this.getSvg6(level);
+        const g = document.createElement("g");
+        g.appendChild(svg1);
+        g.appendChild(svg2);
+        g.appendChild(svg6);
+        return g;
+      },
+      getLevelDetails(level) {
+        switch (level) {
+          case 1:
+            return {
+              side: "right",
+              height: "top",
+            };
+            break;
+          case 2:
+            return {
+              side: "left",
+              height: "top",
+            };
+            break;
+          case 3:
+            return {
+              side: "right",
+              height: "bottom",
+            };
+            break;
+          case 4:
+            return {
+              side: "left",
+              height: "bottom",
+            };
+            break;
+          default:
+            return {
+              side: "right",
+              height: "top",
+            };
+        }
+      },
+      getLength(number) {
+        return number.toString().length;
+      },
+    }));
+  });
+</script>
+<body class="bg-[#F4E5D7]">
+  <div class="isolate">
+    <main>
+      <div class="hidden md:block z-0 absolute inset-y-0 top-1/4 md:top-0 left-0 w-56">
+        <img class="w-20 md:w-40 h-auto" src="./public/abby.png" />
+        <img class="w-20 md:w-40 h-auto -mt-1 md:-mt-20" src="./public/temple.png" />
+        <img class="w-20 md:w-40 h-auto -mt-1 md:-mt-20" src="./public/wackarz.png" />
+      </div>
+      <div
+        class="hidden md:block z-0 absolute inset-y-0 -mt-36 md:-mt-0 top-1/4 md:top-0 right-0 w-56 -mr-10 md:-mr-1 translate-x-1/3 ..."
+      >
+        <img class="w-36 md:w-40 h-80" src="./public/bento.png" />
+        <img class="w-36 md:w-40 h-72 -mt-4" src="./public/card.png" />
+      </div>
+
+      <div class="relative px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl pt-10 pb-32 sm:pt-20 sm:pb-40">
+          <div>
+            <div>
+              <h1 class="font-serif text-4xl font-bold tracking-tight text-center sm:text-6xl uppercase text-[#9A7F65]">
+                The Cistercian monks numbering system
+              </h1>
+              <p class="mt-6 text-lg leading-8 text-gray-600 text-center text-[#9A7F65]">
+                The Cistercian monks invented a numbering system in the 13th century which meant that any number from 1
+                to 9999 could be written using a single symbol.
+              </p>
+              <div class="mt-8 flex flex-col gap-x-4 mx-auto text-center justify-center" x-data="cistercian">
+                <input
+                  x-model="number"
+                  x-on:change.debounce="changeSvgValue($event)"
+                  type="number"
+                  class="flex-1 w-1/2 outline-none rounded-full p-4 text-xl font-black mx-auto text-center"
+                  min="1"
+                  max="9999"
+                />
+                <div class="mx-auto flex-1">
+                  <svg
+                    x-html="svgValue"
+                    class="w-56 h-56"
+                    viewBox="0 0 70 70"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="70" height="70" fill="white" />
+                    <path d="M35 12L51 12" stroke="black" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
